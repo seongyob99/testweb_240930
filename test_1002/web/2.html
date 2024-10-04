@@ -28,6 +28,20 @@
             grid-template-columns: 150px 1fr;
         }
 
+        /* 800 px 보다 작을 경우 동작  */
+        @media(max-width :800px) {
+            #grid {
+                display: block;
+            }
+
+            #grid ol {
+                border-right: none;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+        }
     </style>
 </head>
 
@@ -57,7 +71,7 @@
         </div>
         <!-- 2번째 열, 한덩어리 -->
     </div>
-     <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
+    <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
 </body>
 
 </html>
