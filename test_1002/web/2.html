@@ -18,17 +18,23 @@
 
         ol {
             border-right: 1px solid gray;
-            width: 150px;
+            width: 100px;
             margin: 0;
             padding: 20px;
         }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
-    <div>
+    <div id="grid">
         <!-- 1번째 열, 한덩어리 -->
         <ol>
             <li><a href="1.html">HTML</a></li>
