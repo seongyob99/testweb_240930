@@ -76,6 +76,18 @@
         }
      </script>
 
+     <!-- 먹고 싶은 점심 메뉴 입력 받고, h1 태그에 문자열 출력 해보기.  -->
+     <input id="lunchMenu" type="text" placeholder="먹고싶은 점심메뉴 입력해주세요.">
+     <input type="button" value="메뉴 출력하기" onclick="showMenu()">
+     <!-- 아이디와 문자열을 특정 태그에 출력하기.  -->
+     <h1 id="resultMenu"></h1>
+     <script>
+        function showMenu() {
+            const menu = document.getElementById("lunchMenu").value;
+            document.getElementById("resultMenu").innerText = "내가 먹고 싶은 점심 메뉴: " + menu
+        }
+     </script>
+
 
 </body>
 
