@@ -9,6 +9,28 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <!-- 인풋 타입은 버튼이고, 해당 버튼의 라벨 night 이름이고, 
+    클릭시, 2줄의 코드를 실행 -->
+    <input type="button" value="night" onclick="
+    // document : 객체를 의미, 
+    // . : 구분자, 예), 키:값;
+    // querySelector('body') : 메서드(=함수), 기능 동작을 한다. body 태그 선택기능
+    // . : 구분자, 
+    // style : 속성,
+    // . : 구분자,
+    // backgroundColor : 속성, 배경을 변경하는 기능. 
+    // color : 글자 색을 변경함. 
+    // 결론, 해당 문서(document)에서, querySelector('body') 메서드를 이용해서 
+    // body 태그를 선택함. style 속성에서 배경색을 검정으로 변경하고, 
+    // 글자 색은 흰색으로 변경함.  
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">
+
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
     <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
     <div id="grid">
         <!-- 1번째 열, 한덩어리 -->
